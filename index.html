@@ -115,6 +115,60 @@
             display: block;
         }
 
+        /* ===== Responsive Adjustments ===== */
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 16px;
+                gap: 5px;
+            }
+
+            .logo-img {
+                height: 42px;
+            }
+
+            .logo-text h1 {
+                font-size: 1.05rem;
+                letter-spacing: -0.02em;
+            }
+
+            .logo-text p {
+                font-size: 0.65rem;
+            }
+
+            .header-tel a {
+                font-size: 1rem;
+            }
+
+            .header-tel span {
+                font-size: 0.6rem;
+            }
+
+            .hero {
+                padding: 80px 20px;
+                min-height: 520px;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+                line-height: 1.4;
+            }
+
+            .hero p {
+                font-size: 0.92rem;
+                line-height: 1.7;
+            }
+
+            .sp-br {
+                display: block;
+            }
+        }
+
+        @media (min-width: 481px) {
+            .sp-br {
+                display: none;
+            }
+        }
+
         /* ===== HERO ===== */
         .hero {
             position: relative;
@@ -1052,8 +1106,8 @@
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <span class="hero-badge">🍀 大阪市港区 地域密着 約70年</span>
-            <h2>おかえりなさい、<br>あなたの<em>かかりつけ歯医者</em>。</h2>
+            <div class="hero-badge">🍀 大阪市港区 地域に密着 約70年</div>
+            <h2>おかえりなさい、<br class="sp-br">あなたの <em class="highlight">かかりつけ歯科医者</em>。</h2>
             <p>子どもからお年寄りまで、地域のみなさまに長年愛され続けてきた橋本歯科クリニック。笑顔でお待ちしています。外来診療はもちろん、通院が難しい方へのご自宅・施設への訪問診療も行っています。</p>
             <div class="hero-btns">
                 <a href="#schedule" class="btn btn-primary">
