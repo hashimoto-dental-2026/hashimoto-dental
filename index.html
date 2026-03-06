@@ -149,8 +149,10 @@
             }
 
             .hero h2 {
-                font-size: 1.8rem;
-                line-height: 1.4;
+                font-size: clamp(1.6rem, 8vw, 2rem);
+                line-height: 1.5;
+                word-break: keep-all;
+                overflow-wrap: break-word;
             }
 
             .hero p {
@@ -160,6 +162,8 @@
 
             .sp-br {
                 display: block;
+                content: "";
+                margin-top: 0;
             }
         }
 
